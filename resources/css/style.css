@@ -1,0 +1,459 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/*
+  color primary: #faaf40
+*/
+
+/* ----------------------------- */
+/* RESET                         */
+/* ----------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* ----------------------------- */
+/* GENERAL                       */
+/* ----------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  color: #555;
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.box {
+  padding: 1%;
+}
+
+/* ----------------------------- */
+/* HEADINGS                      */
+/* ----------------------------- */
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 280%;;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+}
+
+h2 {
+  font-size: 160%;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+h3 {
+  font-size: 120%;
+}
+
+/* ----------------------------- */
+/* BUTTONS                       */
+/* ----------------------------- */
+
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 3px;
+  word-spacing: 1px;
+  border-width: 2px;
+  margin: 0 10px 13px 0;
+  padding: 16px 27px;
+  line-height: 1.3333333;
+  color: #ffffff;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  background-color: #faaf40;
+  border: 1px solid #faaf40;
+  -webkit-transition: background-color 0.2s, border 0.2s color 0.2s;
+  -o-transition: background-color 0.2s, border 0.2s color 0.2s;
+  transition: background-color 0.2s, border 0.2s color 0.2s;
+}
+
+.ghost-button:link,
+.ghost-button:visited {
+  border: 1px solid #faaf40;
+  -webkit-transition: background-color 0.2s, border 0.2s color 0.2s;
+  -o-transition: background-color 0.2s, border 0.2s color 0.2s;
+  transition: background-color 0.2s, border 0.2s color 0.2s;
+}
+
+.btn-full:hover,
+.btn-full:active,
+.ghost-button:hover,
+.ghost-button:active {
+  background-color: #f99b0e;
+  border: 1px solid #f99b0e;
+  -webkit-transition: background-color 0.2s, border 0.2s color 0.2s;
+  -o-transition: background-color 0.2s, border 0.2s color 0.2s;
+  transition: background-color 0.2s, border 0.2s color 0.2s;
+}
+
+/* ----------------------------- */
+/* SECTIONS                      */
+/* ----------------------------- */
+
+.section-container {
+  margin: 60px 0;
+}
+
+.background {
+  background-color: #f0f0f0;
+  padding: 40px;
+}
+
+.section-title {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.section-title::after {
+  display: block;
+  height: 2px;
+  background-color: #faaf40;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.section-p {
+  line-height: 145%;
+  text-align: justify;
+}
+
+.col-p {
+  margin-left: 10%;
+}
+
+.short-p {
+  line-height: 145%;
+  margin: 20px 0px;
+  
+}
+
+.long-p {
+  width: 80%;
+}
+
+/* ----------------------------- */
+/* HEADER                     */
+/* ----------------------------- */
+
+.header {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-video-overlay {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.full-bg{
+  display: none;
+}
+
+.background-video {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  height: auto;
+  width: auto;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: url(../media/img/banner.png) no-repeat;
+  background-size: cover;
+  z-index: -2;
+}
+
+.logo {
+  height: 100px;
+  float: left;
+  margin-top: 20px;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 45px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+  word-spacing: 2px;
+}
+
+.main-nav li a {
+  color: #fff;
+  padding: 8px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 85%;
+  border-bottom: 2px solid transparent;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 8px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 85%;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: border-bottom 0.2s;
+  -o-transition: border-bottom 0.2s;
+  transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid #faaf40;
+}
+
+.hero-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.hero-text {
+  position: relative;
+  margin: 5px 0;
+  font-weight: 700;
+  color: #fff;
+}
+
+.hero-subtext {
+  padding: 0 0 30px 0;
+  position: relative;
+  text-align: center;
+}
+
+.hero-btns-container {
+  text-align: center;
+}
+
+/* ----------------------------- */
+/* WELCOME                   */
+/* ----------------------------- */
+
+.welcome-subtitle {
+  text-transform: none;
+  font-size: 155%;
+  font-weight: 300 italic;
+  word-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+/* ----------------------------- */
+/* SERVICES                     */
+/* ----------------------------- */
+
+.btn-info-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* ----------------------------- */
+/* TOURS                      */
+/* ----------------------------- */
+
+.tours-box {
+  background-color: #f0f0f0;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.tours-content {
+  padding-bottom: 20px;
+}
+
+.tours-img {
+  max-width: 100%;
+}
+
+.tours-title {
+  color: #fff;
+  padding: 12px 18px;
+  background-color: #faaf40;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.tours-long-p {
+  margin: 0% 8%;
+  margin-bottom: 20px;
+  text-align: center justify;
+  font-size: 20px;
+}
+
+.tours-short-p {
+  margin: 5% 10%;
+  text-align: justify;
+  font-size: 18px;
+}
+
+.tours-short-p::after {
+  display: block;
+  height: 1px;
+  background-color: #faaf40;
+  content: " ";
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.about-tours {
+  font-size: 16px;
+  color: #555;
+  text-decoration: none;
+  text-align: center;
+  margin-left: 22%;
+}
+
+.about-tours::after {
+  content: ">";
+  color: #fff;
+  background: #faaf40;
+  height: 20px;
+  width: 20px;
+  border-radius: 30px;
+  display: inline-block;
+  line-height: 20px;
+  font-size: 14px;
+  margin-left: 10px;
+  
+}
+
+.feature {
+  margin: 80px 0;
+}
+
+.section-tours {
+  margin: 80px 0;
+}
+
+/* ----------------------------------------------- */
+/* PLAN YOUR SAFARI */
+/* ----------------------------------------------- */
+
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  font-size: 18px;
+  width: 100%;
+  padding: 8px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type="checkbox"] {
+  margin: 10px 5px 10px 0;
+}
+
+/* ----------------------------------------------- */
+/* TESTIMONIALS
+/* ----------------------------------------------- */
+
+.review-container {
+  background-color: #f0f0f0;
+}
+
+.potrait {
+  border-radius: 50%;
+  width: 100px;
+  margin-top: 15px;
+}
+
+.review {
+  margin-right: 5%;
+  line-height: 1,7%;
+  font-size: 18px;
+}
+
+/* ----------------------------------------------- */
+/* FOOTER */
+/* ----------------------------------------------- */
+
+footer {
+  background-color: #333;
+  padding: 50px;
+  font-size: 80%;
+}
+
+footer p {
+  color: #888;
+  text-align: center;
+  margin-top: 20px;
+}
